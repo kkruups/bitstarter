@@ -9,7 +9,7 @@ app.use(express.logger());
  mybuf=fs.readFileSync('index.html');
 
 app.get('/', function(request, response) {
-  response.send(mybuf.toString);
+  response.send(mybuf.toString());
 });
 
 var port = process.env.PORT || 5000;
